@@ -8,9 +8,10 @@
 - [Features](#Features)
 - [Getting Started](#Getting-Started)
 - [Database Setup](#Database-Setup)
+-  [Usage](#Usage)
 - [Queries and Examples](#Queries/Examples)
 - [Contributing](#Contributing)
-- [Usage](#Usage)
+
 
 
 
@@ -37,15 +38,15 @@ Ensure you have the following installed:
 >* create a database name in ssms <br><br>
 >* Imported both tables into the database created <br><br>
 >* Configured the database connection in your SQL client.<br><br>
-### Usage
+## Usage
 Explored the power of SQL queries to gain insights into COVID-19 data. Several queries were written to obtain copious information about ; <br>
 >* ```Percentage of the poulation of different locations that got vaccinated```<br>
 >* ```Highest infection rate compared to location```<br>
 >* ```Total infected persons vs Total deaths recorded```<br>
 >* ```death percentage if you contract covid in Nigeria``` just to name a few also created ```VIEWS``` for visualization
 
-### Database Schema
-Below is a simplified representation of the COVID-19 database schema:
+#### Database Schema
+Below is a simplified representation of a COVID-19 database schema:
 
 sql
 Copy code
