@@ -10,19 +10,20 @@
 - [Database Setup](#Database-Setup)
 - [Queries and Examples](#Queries/Examples)
 - [Contributing](#Contributing)
+- [Usage](#Usage)
 
 
 
 
-## Project Overview <br>
+## Project Overview 
 ------
 This project aims to provide valuable insights into COVID-19 data through SQL analysis. Whether you're interested in regional trends, case demographics, or the impact on healthcare systems, this SQL project offers a versatile and interactive approach to exploring pandemic-related data.
 
-## Features <br>
+## Features 
 > Dynamic Analysis: SQL queries for dynamic analysis of COVID-19 data based on various parameters such as date, location, and demographics.<br>
 > Visualization Support: Leverage SQL queries to extract data for visualization tools, creating charts and graphs to enhance data understanding.<br>
 > Regional Insights: Explore regional patterns and trends in COVID-19 cases, recoveries, and fatalities.<br><br>
-## Getting Started<br>
+## Getting Started
 Follow these steps to get the project up and running on your local machine.<br><br>
 ### Prerequisites <br>
 Ensure you have the following installed:
