@@ -14,7 +14,7 @@
 
 
 
-## Project Overview <br>
+## Project-Overview <br>
 ------
 This project aims to provide valuable insights into COVID-19 data through SQL analysis. Whether you're interested in regional trends, case demographics, or the impact on healthcare systems, this SQL project offers a versatile and interactive approach to exploring pandemic-related data.
 
