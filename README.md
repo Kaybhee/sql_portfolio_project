@@ -16,13 +16,13 @@
 
 
 ## Project Overview 
-------
+
 This project aims to provide valuable insights into COVID-19 data through SQL analysis. Whether you're interested in regional trends, case demographics, or the impact on healthcare systems, this SQL project offers a versatile and interactive approach to exploring pandemic-related data.
 
 ## Features 
-> Dynamic Analysis: SQL queries for dynamic analysis of COVID-19 data based on various parameters such as date, location, and demographics.<br>
-> Visualization Support: Leverage SQL queries to extract data for visualization tools, creating charts and graphs to enhance data understanding.<br>
-> Regional Insights: Explore regional patterns and trends in COVID-19 cases, recoveries, and fatalities.<br><br>
+>* Dynamic Analysis: SQL queries for dynamic analysis of COVID-19 data based on various parameters such as date, location, and demographics.<br><br>
+>* Visualization Support: Leverage SQL queries to extract data for visualization tools, creating charts and graphs to enhance data understanding.<br><br>
+>* Regional Insights: Explore regional patterns and trends in COVID-19 cases, recoveries, and fatalities.<br><br>
 ## Getting Started
 Follow these steps to get the project up and running on your local machine.<br><br>
 ### Prerequisites <br>
@@ -40,11 +40,11 @@ Ensure you have the following installed:
 ### Usage
 Explored the power of SQL queries to gain insights into COVID-19 data. Several queries were written to obtain copious information about ; <br>
 >* ```Percentage of the poulation of different locations that got vaccinated```<br>
->* ``Highest infection rate compared to location```<br>
->* ```Total infected persons vs Total deaths recorded```
+>* ```Highest infection rate compared to location```<br>
+>* ```Total infected persons vs Total deaths recorded```<br>
 >* ```death percentage if you contract covid in Nigeria``` just to name a few also created ```VIEWS``` for visualization
 
-Database Schema
+### Database Schema
 Below is a simplified representation of the COVID-19 database schema:
 
 sql
@@ -57,20 +57,24 @@ CREATE TABLE covid_data (
     recoveries INT,
     fatalities INT
 );
-Queries and Examples
+## Queries and Examples
 Here are a few examples of SQL queries you can use for analysis:
 
-sql
-Copy code
--- Example query 1: Total cases by region
-SELECT location, SUM(cases) as total_cases
-FROM covid_data
-GROUP BY location;
+###### sql
+>* Example query 1: Select statement with where clause <br>
+```select location,continent,date,total_cases, new_cases,total_deaths, population ```<br>
+```from PortfolioProject..covidDeaths```<br>
+```where location = 'Nigeria'```<br><br><br>
 
--- Example query 2: Cases over time
-SELECT date, SUM(cases) as daily_cases
-FROM covid_data
-GROUP BY date
-ORDER BY date;
-Contributing
+
+>* Example query 2: Highest infection rate compared to Location <br>
+```select ```<br>
+```location,MAX(try_cast(total_cases as int)) as max_pop_infected,population ,```<br>
+```MAX(try_cast(total_cases as int)/population) * 100 as percent_pop_infected```<br>
+```from PortfolioProject..covidDeaths```<br>
+```group by location, population```<br>
+```order by percent_pop_infected desc```<br><br><br>
+
+
+## Contributing
 Feel free to contribute to the project by submitting issues or pull requests. Your feedback and improvements are highly valued!
